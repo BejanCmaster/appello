@@ -105,3 +105,38 @@ a {
 .page--ios .dis-scroll {
   position: relative;
 }
+
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 30px;
+}
+
+.btn {
+  padding: 12px 15px;
+  background-color: transparent;
+  border: 1px solid var(--color-light);
+  border-radius: 5px;
+  font-size: 13px;
+  line-height: 16px;
+  color: var(--color-light);
+  transition: 0.3s ease-in-out;
+
+  &:hover {
+    border: 1px solid var(--color-blue);
+    background-color: var(--color-blue);
+  }
+
+  &--primary {
+    font-size: 15px;
+    padding: 15px 37px;
+    border: 1px solid var(--color-blue);
+    background-color: var(--color-blue);
+
+    &:hover {
+      border: 1px solid var(--color-light);
+      background-color: transparent;
+    }
+  }
+}

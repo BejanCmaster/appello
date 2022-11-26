@@ -4,13 +4,12 @@
 @import "fonts";
 @import "settings";
 
-// подключения компонентов страницы
+// компонентов страницы
+@import "./components/burger";
+@import "./components/promo";
 @import "./components/header";
 
-// тестовые стили, удалите их
-.page__body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: var(--vh);
-}
+
+
+// средние компонентов страницы
+@import "./components/nav";

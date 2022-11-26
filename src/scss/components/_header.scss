@@ -1,0 +1,45 @@
+.header {
+
+  &__container {
+    padding-top: 51px;
+    padding-bottom: 50px;
+    align-items: center;
+  }
+
+  &__left {
+    grid-column: 2 span;
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    grid-column: 10 span;
+
+    @include small-tablet {
+      display: none;
+    }
+  }
+
+  &__button {
+    margin-left: 52px;
+  }
+
+  &__logo {
+    max-width: 100%;
+    display: block;
+
+    @include small-tablet {
+      img {
+        max-width: 91px;
+      }
+    }
+
+    @include mobile {
+      img {
+        max-width: 91px;
+      }
+    }
+  }
+
+}

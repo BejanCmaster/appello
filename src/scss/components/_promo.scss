@@ -1,0 +1,46 @@
+.promo {
+  min-height: 800px;
+  background-image: url("../img/promo-bg.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+
+  &__wrapper {
+    width: 421px;
+    margin-top: 145px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__header {
+    margin: 0;
+    margin-bottom: 35px;
+    font-size: 42px;
+    line-height: 50px;
+    color: var(--color-light);
+
+    @include mobile {
+      font-size: 33px;
+    }
+  }
+
+  &__subheader {
+    margin: 0;
+    margin-bottom: 35px;
+    font-size: 13px;
+    line-height: 30px;
+    color: var(--color-light);
+
+    @include small-tablet {
+      font-size: 16px;
+    }
+
+
+    @include mobile {
+      font-size: 16px;
+      width: 300px;
+    }
+  }
+}

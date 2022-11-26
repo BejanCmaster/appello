@@ -1,0 +1,39 @@
+.burger {
+  /* @include burger; */
+
+  display: none;
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  right: 15px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: transparent;
+  cursor: pointer;
+
+  @include small-tablet {
+    display: block;
+  }
+
+  &__line {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border-radius: 100px;
+    width: 26px;
+    height: 2px;
+    background-color: var(--color-light);
+    transform: translateX(-50%) translateY(-50%);
+
+    &:first-child {
+      margin-top: -7px;
+    }
+
+    &:last-child {
+      left: 9px;
+      margin-top: 7px;
+      width: 20px;
+      transform: translateY(-50%);
+    }
+  }
+}
