@@ -15,14 +15,14 @@
     align-items: center;
     justify-content: flex-end;
     grid-column: 10 span;
-
-    @include small-tablet {
-      display: none;
-    }
   }
 
   &__button {
     margin-left: 52px;
+
+    @include hight-tablet {
+      display: none;
+    }
   }
 
   &__logo {

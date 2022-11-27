@@ -1,6 +1,4 @@
 .burger {
-  /* @include burger; */
-
   display: none;
   position: absolute;
   width: 44px;
@@ -9,9 +7,8 @@
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.08);
   background: transparent;
-  cursor: pointer;
 
-  @include small-tablet {
+  @include hight-tablet {
     display: block;
   }
 
@@ -37,3 +34,23 @@
     }
   }
 }
+
+.burger-close {
+  display: none;
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  right: 15px;
+  top: 15px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background-image: url(../img/header/close-menu.svg);
+  background-position: center;
+  background-size: 14px 12px;
+  background-repeat: no-repeat;
+
+  @include hight-tablet {
+    display: block;
+  }
+}
+
