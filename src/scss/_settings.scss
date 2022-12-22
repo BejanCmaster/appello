@@ -140,3 +140,22 @@ a {
     }
   }
 }
+
+
+.section-offset {
+  padding-top: 150px;
+}
+
+.title {
+
+  &__fz26 {
+    margin: 0;
+    font-size: 26px;
+    line-height: 38px;
+  }
+
+  &__fz41 {
+    font-size: 41px;
+    text-align: center;
+  }
+}
